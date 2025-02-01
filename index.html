@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SSITA Fivem Data Reader</title>
+  <link rel="shortcut icon" href="img/ssita-icon.png" type="image/x-icon">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1><img src="img/ssita-icon.png" class="ssita" alt="SSITA"> ScreenShare ITA Fivem Data Reader</h1>
+    <div class="icons">
+      <a href="https://discord.gg/SSIta" target="_blank"><img src="img/discord-icon.png" alt="Discord"></a>
+      <a href="https://www.youtube.com/@ScreenShareITA" target="_blank"><img src="img/youtube-icon.png" alt="YouTube"></a>
+      <a href="https://github.com/ScreenShareITA" target="_blank"><img src="img/github-icon.png" alt="GitHub"></a>
+    </div>
+  </header>
+
+  <main>
+    <div class="input-container">
+      <!-- <input type="text" id="endpoint-input" placeholder="Inserisci l'endpoint (es. ga97ym)" value="ga97ym"> -->
+      <input list="options" id="input-list" name="inputL" pattern="^[a-zA-Z0-9]{6}$" required placeholder="Usa EndPoint Es: ga97ym (ip e porta non sono ancora stati introdotti).">
+      <datalist id="options">
+        <option value="e78e3b">Emerals</option>
+        <option value="446gz9">Lemon City V8</option>
+        <option value="zy9vvp">Fenix Elite PVP</option>
+        <option value="x7z6jr">Artemis RP 7.0</option>
+        <option value="4346qq">Italian Paradise 8.0</option>
+        <option value="ga97ym">IMPERO X</option>
+        <option value="8d4y6b">Royal RP</option>
+        <option value="m9dvo7">Death Freeroam PVP</option>
+        <option value="d7g9z5">Explicit Code Full RP</option>
+        <option value="95kkab">Vortic 7.0</option>
+        <option value="oea54x">Nemoris</option>
+        <option value="odv3g7">Enveart V</option>
+        <option value="6zer78">Grau City Life V9</option>
+        <option value="e9lq7p">Elusivity RP</option>
+        <option value="blbdmd">Five Lives</option>
+        <option value="64my87">LiveLife</option>
+        <option value="95gqab">Italy Reborn RP</option>
+        <option value="k9y3ld">Hunt PVP</option>
+        <option value="3degko">Trenches Gaming</option>
+        <option value="jpdjkm">Italia RP 3.0</option>
+        <option value="dvrobd">Legend RP</option>
+        <option value="g74eyx">Infinity RP 1.0</option>
+        <option value="y7g4ry">Predator V5</option>
+        <option value="j3eodm">Crow Italia</option>
+        <option value="ogvdxx">Vyper RP</option>
+        <option value="5mxegd">Authentic RP</option>
+        <option value="zeexld">Invictus RP</option>
+        <option value="97qmba">Aura RP</option>
+      </datalist>
+      <button id="refresh-button">Refresh</button>
+
+    </div>
+
+    <div id="data-container">
+    </div>
+  </main>
+  <script src="serverList.js"></script>
+  <script src="serverInfo.js"></script>
+</body>
+</html>
