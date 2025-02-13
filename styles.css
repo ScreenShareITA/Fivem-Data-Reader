@@ -1,6 +1,6 @@
 /* styles.css */
 ::selection{
-  color: red;
+  color: #FF8C42;
   background-color: black;
 }
 
@@ -22,7 +22,7 @@ header {
 }
 
 header h1 {
-  color: #ff0000;
+  color: #FF8C42;
   margin: 0;
 }
 
@@ -62,15 +62,16 @@ main {
 
 #refresh-button {
   padding: 10px 20px;
-  background-color: #ff0000;
+  background-color: #FF8C42;
   border: none;
   border-radius: 5px;
-  color: #ffffff;
+  color: #000;
+  font-weight:400;
   cursor: pointer;
 }
 
 #refresh-button:hover {
-  background-color: #cc0000;
+  background-color: #CC7035;
 }
 
 #input-list {
@@ -92,7 +93,7 @@ main {
 
 .data-section a {
   text-decoration: none;
-  color: #bb0000;
+  color: #BB6730;
 }
 .data-section a:hover {
   color: rgba(70, 98, 255, 0.5);
